@@ -1,38 +1,205 @@
-:root {
-    --primary-color: #0076b3;
-    --secondary-color: #222;
-    --text-color: #fff;
-    --border-color: black;
-}
-
-/* Improved body styling */
-body {
+body{
     background: linear-gradient(45deg, skyblue, blue);
     background-size: 250%, 250%;
-    color: var(--text-color);
-    font-family: Arial, Helvetica, sans-serif;
-}
 
-/* Combine similar rules */
-.box, .box-center, .box-large {
-    background-color: var(--primary-color);
-    border: 2px solid var(--border-color);
-    padding: 10px;
-    text-align: center;
 }
+.p-cell{ 
+color: #055884;
+}
+.h1{
+color: blue;
+}
+base{ 
+color: aliceblue;
+}
+.my-box {
+position: absolute; 
+top: -50px;
+left: 350px;
+border: 2px solid #222; /*add a border */
 
-/* Improved media query */
-@media (min-width: 768px) {
-    .item {
-        flex: 1 1 48%;
+padding: 10px; /*add padding around content */
+
+background-color: #0076b3; /* set boackground color */
+
+width: 500px; /* set width */
+
+margin: 20px auto; /* center the box horizontally */
+text-align: center;
+text-emphasis-color: #fff;
+
+}
+.my-box2 {
+    position: absolute;
+    top:  215px;
+    left: 0px;
+    border: 2px solid black; /*add a border */
+    
+    padding: 10px; /*add padding around content */
+    
+    background-color: #0076b3; /* set boackground color */
+    
+    width: 300px; /* set width */
+    
+    margin: 20px auto; /* center the box horizontally */
     }
+.my-box3 {
+position: absolute;
+top:  425px;
+left: 0px;
+
+border: 2px solid black; /*add a border */
+
+padding: 10px; /*add padding around content */
+
+background-color: #0076b3; /* set boackground color */
+
+width: 300px; /* set width */
+
+margin: 20px auto; /* center the box horizontally */
+}
+.my-box4 {
+position: absolute;
+top:  550px;
+left: 0px;
+
+border: 2px solid black; /*add a border */
+
+padding: 10px; /*add padding around content */
+
+background-color: #0076b3; /* set boackground color */
+
+width: 300px; /* set width */
+
+margin: 20px auto; /* center the box horizontally */
 }
 
-/* Accessibility improvements */
-.h1 {
-    color: var(--primary-color);
+.my-box5 {
+    position: absolute;
+    top:  500px;
+    left: 450px;
+    right: 0px;
+
+
+    }
+
+
+.my-box6 {
+    position: absolute;
+    top: 225px;
+    left: 350px;
+    border: 2px solid #222; /*add a border */
+
+    padding: 10px; /*add padding around content */
+
+    background-color: white; /* set boackground color */
+
+    width: 500px; /* set width */
+
+    height: 190px; /* set height */
+
+    margin: 20px auto; /* center the box horizontally */
+
+    font-size: 30px;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif
 }
 
-.p-cell {
-    color: var(--secondary-color);
+.my-box7 {
+    position: absolute;
+    top: 850px;
+    left: -100px;
 }
+
+.my-box8 {
+    position: absolute;
+    top: 100px;
+    left: 750px;
+}
+.my-box9 {
+    position: absolute;
+    top: 1000px;
+    left: -400px;
+}
+
+.my-box10 {
+    position: absolute;
+    top: 650px;
+    left: 950px;
+}
+
+.my-box11 {
+    position: absolute;
+    top: 850px;
+    left: 650px;
+}
+
+.my-img {
+position: absolute;
+top: -15px;
+left:  0px;
+height: 100px;
+width: 100px;
+
+}
+
+.my-img2 {
+    position: absolute;
+    top: 0px;
+    left: 325px;
+    height: 250px;
+    width: 250px;
+}
+
+
+
+.container{
+    width: 600px;
+    height: 400px;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+}
+.swiper{
+    width: 80%;
+    height: fit-content;
+
+}
+.swiper-slide img{
+    width: 100%;
+
+}
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color: #fff;
+}
+.swiper .swiper-pagination-bullet-active{
+    background: #fff;
+}
+.image__wrapper { 
+    width: 100%;
+    position: relative;
+    padding-top: 100%;
+}
+.image__wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center top;
+}
+
+.resize{ width: 100%; height: auto;}
+
+.fill{ object-fit: fill; }
+.contain { object-fit: contain;}
+.cover { object-fit: cover;}
+.scale { object-fit: scale-down;}
+
