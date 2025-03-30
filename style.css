@@ -84,3 +84,19 @@ body {
 .scale {
     object-fit: scale-down;
 }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex: 1 1 100%;
+    padding: 10px;
+}
+
+@media (min-width: 768px) {
+    .item {
+        flex: 1 1 48%;
+    }
+}
